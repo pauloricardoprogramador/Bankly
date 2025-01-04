@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+<img src='.github/bankly.jpg'>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Bankly - Sistema de Gestão Bancária
 
-Currently, two official plugins are available:
+Bankly é uma aplicação bancária fictícia desenvolvida com o intuito de demonstrar uma interface de cadastro e login utilizando React, TypeScript, React Hook Form, Yup, React Router, e Toastify.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- **React**: Biblioteca JavaScript para construção da interface.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **React Hook Form**: Biblioteca para gerenciar formulários de forma simples e eficiente.
+- **Yup**: Biblioteca para validação de formulários.
+- **React Router**: Utilizado para navegação entre páginas.
+- **React Toastify**: Para notificações de sucesso e erro.
+- **CSS Modules**: Para o gerenciamento de estilos em módulos.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Funcionalidades
 
-- Configure the top-level `parserOptions` property like this:
+1. **Tela Splash**: Exibe o logo do sistema na tela inicial.
+2. **Cadastro de Usuário**: Formulário para criar uma nova conta, com validação de campos usando Yup.
+3. **Login de Usuário**: Formulário para login, também com validação de campos.
+4. **Redirecionamento Pós-Login**: Após o login bem-sucedido, o usuário é redirecionado para a área principal.
+5. **Navegação**: Utiliza o React Router para navegar entre as páginas de login, cadastro e página inicial.
+
+## Scripts
+
+- **`dev`**: Inicia o servidor de desenvolvimento.
+- **`build`**: Compila o projeto para produção.
+- **`lint`**: Executa o linting no código.
+- **`preview`**: Visualiza a versão de produção localmente.
+
+## Instalação
+
+1. Clone o repositório:
 
 ```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+git clone https://github.com/pauloricardoprogramador/Bankly.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+# Licença
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Este projeto está disponível para uso pessoal e educacional.
