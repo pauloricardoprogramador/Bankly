@@ -1,9 +1,9 @@
-import Cadastro from "./pages/cadastro";
+import Start from "./pages/inicio";
 
 function App() {
   return (
     <>
-      <Cadastro />
+      <Start />
     </>
   );
 }

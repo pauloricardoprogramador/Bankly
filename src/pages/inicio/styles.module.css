@@ -15,6 +15,14 @@
   flex-direction: column;
 }
 
+.logo {
+  font-family: "Cabin", serif;
+  color: var(--textos);
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 342px;
+}
+
 .footer {
   margin-bottom: 4rem;
 }
