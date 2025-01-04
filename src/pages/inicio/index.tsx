@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Splash } from "../../components/splash";
 import styles from "./styles.module.css";
 
+import { Link } from "react-router-dom";
+
 function Start() {
   const [splash, setSplash] = useState(true);
 
@@ -19,7 +21,9 @@ function Start() {
       <div className={styles.container}>
         <Splash />
         <footer className={styles.footer}>
-          <button>Começar</button>
+          <Link to="login" className={styles.nave}>
+            <button>Começar</button>
+          </Link>
         </footer>
       </div>
     </div>

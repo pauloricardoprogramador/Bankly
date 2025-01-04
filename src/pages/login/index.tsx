@@ -6,6 +6,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 import { ToastContainer, toast, Bounce } from "react-toastify";
+import { Link } from "react-router-dom";
 
 type Props = {
   email: string;
@@ -92,9 +93,11 @@ function Login() {
           </div>
 
           <div className={styles.footer}>
-            <p>
-              Não tem uma conta? <span>Cadastre-se</span>
-            </p>
+            <Link to="/cadastro" className={styles.nave}>
+              <p>
+                Não tem uma conta? <span>Cadastre-se</span>
+              </p>
+            </Link>
           </div>
         </div>
       </form>

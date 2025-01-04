@@ -6,6 +6,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 import { ToastContainer, toast, Bounce } from "react-toastify";
+import { Link } from "react-router-dom";
 
 type Props = {
   nome: string;
@@ -61,8 +62,8 @@ function Cadastro() {
   return (
     <div className={styles.container}>
       <Header
-        titulo="Login"
-        subtitulo="Bem-vindo, novamente ! Entre com seu e-mail e senha para acessar sua conta da Bankly"
+        titulo="Cadastro"
+        subtitulo="Preencha os dados abaixo para começar a usar os serviços do Banbly. É rápido e seguro."
       />
 
       <form action="#" onSubmit={handleSubmit(handleFormulario)}>
@@ -125,9 +126,11 @@ function Cadastro() {
           </div>
 
           <div className={styles.footer}>
-            <p>
-              Já tem uma conta? <span>Login</span>
-            </p>
+            <Link to="/login" className={styles.nave}>
+              <p>
+                Já tem uma conta? <span>Login</span>
+              </p>
+            </Link>
           </div>
         </div>
       </form>

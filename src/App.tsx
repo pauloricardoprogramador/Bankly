@@ -1,9 +1,9 @@
-import Start from "./pages/inicio";
+import Rotas from "./routes";
 
 function App() {
   return (
     <>
-      <Start />
+      <Rotas />
     </>
   );
 }
