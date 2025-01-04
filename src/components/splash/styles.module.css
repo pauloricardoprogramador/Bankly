@@ -1,0 +1,22 @@
+:root {
+  --background: #313b3f;
+  --btn-inputs: #384b53;
+  --hover-focus: #2e5566;
+  --textos: #dddddd;
+  --subtextos: #999999;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-family: "Cabin", serif;
+  color: var(--textos);
+  font-size: 24px;
+  font-weight: 100;
+}

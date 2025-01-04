@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  font-family: "Poppins", serif;
+}
+:root {
+  --background: #313b3f;
+  --btn-inputs: #384b53;
+  --hover-focus: #2e5566;
+  --textos: #dddddd;
+  --subtextos: #999999;
+}

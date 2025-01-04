@@ -1,0 +1,36 @@
+:root {
+  --background: #313b3f;
+  --btn-inputs: #384b53;
+  --hover-focus: #356174;
+  --textos: #dddddd;
+  --subtextos: #999999;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer {
+  margin-bottom: 4rem;
+}
+
+.footer button {
+  height: 40px;
+  width: 340px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--btn-inputs);
+  cursor: pointer;
+  color: var(--textos);
+  font-size: 12px;
+  transition: 1s all ease-in-out;
+}
+
+button:hover {
+  background-color: var(--hover-focus);
+}

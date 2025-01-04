@@ -1,0 +1,30 @@
+:root {
+  --background: #313b3f;
+  --btn-inputs: #384b53;
+  --hover-focus: #2e5566;
+  --textos: #dddddd;
+  --subtextos: #999999;
+}
+
+.container {
+  margin-top: 4rem;
+  padding: 0rem 1rem;
+}
+
+.titulo {
+  color: var(--textos);
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  width: 305px;
+  font-size: 12px;
+  color: var(--subtextos);
+  margin-bottom: 2rem;
+}
+
+hr {
+  border: 1px solid var(--btn-inputs);
+}
